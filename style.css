@@ -1,0 +1,142 @@
+@font-face {
+    font-family: hat;
+    src: url(/asstes/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+ }
+ :root{
+     --Pale-blue: hsl(228, 100%, 96%);
+     --Bright-blue: hsl(245, 75%, 52%);
+ 
+     --Very-pale-blue: hsl(225, 100%, 98%);
+     --Desaturated-blue: hsl(224, 23%, 55%);
+     --Dark-blue: hsl(223, 47%, 23%);
+ }
+ *{
+     margin: 0;
+    padding: 0;
+    }
+    html,body{
+    font-family: 'Red Hat Display','hat';
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Pale-blue);
+    }
+    main{
+     width: 310px;
+     height: auto;
+     background-color:var(--Very-pale-blue);
+     border-radius:10px;
+     align-items:center;
+     justify-content: center; 
+ }
+  header{
+     width: 310px;
+     height: auto;
+     margin: 0%;
+     text-align: center;
+  }
+  img{
+     width: 310px;
+     margin: 0%;
+     border-radius: 10px 10px 0px 0px;
+  }
+  .hero{
+     margin: 0%;
+  }
+  header h1 {
+     padding: 1rem;
+     margin: 0%;
+  }
+  header p{
+    text-align: center;
+    margin:0rem;
+    font-size: 11px;
+    padding: 0px 50px;
+    color: var(--Desaturated-blue);
+  }
+  .details{
+    position: relative;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 17px 25px;
+    padding: 1rem 0.8rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: var(--Pale-blue);
+    font-weight: 700;
+  }
+  .details img{
+    height: 35px;
+    width: 35px;
+  }
+ .details .Change{
+    color:var(--Bright-blue);
+    text-decoration: underline;
+    font-weight: bold;
+    border: none;
+    background: none;
+    right: 0;
+    cursor: pointer;
+    &:hover{
+       opacity: 0.6;
+       text-decoration: none;
+    }
+ }
+ .plan h3{
+    font-size: 13px;
+    text-wrap: nowrap;
+ }
+ .icon-plan{
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+    align-items: center;
+ }
+ .plan{
+    margin-right: .5rem;
+ }
+ 
+ .details p{
+    font-size: 13px;
+    color: var(--Desaturated-blue);
+ }
+ footer{
+    text-align: center;
+ }
+ footer button{
+    cursor:pointer;
+    background-color:var(--Bright-blue);
+    color: aliceblue;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 70px;
+    box-shadow: 0px 19px 9px  hsla(245, 75%, 52%, 0.218);
+    &:hover{
+        opacity: 0.6;
+    }
+  }
+ footer p{ 
+    margin:1.5rem 0rem;
+    padding-bottom: 1rem;
+    color: var(--Desaturated-blue);
+    cursor: pointer;
+    font-weight: 700;
+    &:hover {
+       color: var(--Dark-blue); 
+        
+    }
+ }
+ #author{ 
+    font-weight: 500;
+    margin-bottom: 0rem; 
+    font-size: 0.7rem; 
+ }
+ 
+  
